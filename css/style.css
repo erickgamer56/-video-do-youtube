@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: arial;
+}
+body{
+    background-color: #252525;
+}
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url(../digital-art-pixel-art-pixelated-pixels-wallpaper-preview.jpg);
+    background-size: cover;
+}
+header::after{
+    content: '';
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    background-color: cyan;
+    filter: drop-shadow(0 0 30px cyan);
+    border-radius: 50%;
+    z-index: -1;
+    left: 300px;
+
+}
+.box1{
+    background-color: rgba(0, 0, 0, 0.514);
+    border-radius: 16px;
+    width: 600px;
+    height: 350px;
+    backdrop-filter: blur(5px);
+    box-shadow: 25px 25px 58px black;
+    border: 1px solid rgb(255, 255, 255);
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    flex-direction: column;
+    margin: 10px;
+    overflow: hidden;
+}
+#inp{
+    margin-bottom: 30px;
+    width: 450px;
+    height: 45px;
+    font-size: 20px;
+    background-color: transparent;
+    color: white;
+    border: none;
+    border-bottom: 1px solid white;
+    outline: none;
+    border-radius: 0;
+    margin-top: 30px;
+}
+.btn{
+    width: 160px;
+    height: 45px;
+    background-color: transparent;
+    color: white;
+    border: 2px solid cyan;
+    transition: border .3s ease;
+}.btn:hover{
+    border: 2px solid white;
+    filter: drop-shadow(0 0 25px white);
+}
+.btn1{
+    padding: 15px;
+    text-decoration: none;
+}
+.tampe{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: opacity .3s ease;
+    opacity: 0;
+    z-index: -1;
+}
+.spiner{
+    width: 100px;
+    height: 100px;
+    border: 6px solid white;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-radius: 50%;
+    animation: giro 1s infinite linear;
+}
+@keyframes giro {
+    to{
+        transform: rotate(360deg);
+    }
+}
+#write{
+    color: white;
+    margin-top: 30px;
+    font-size: 18px;
+}
+.btn1{
+    margin-top: 20px;
+    width: 200px;
+}
+.video{
+    width: 270px;
+    height: 150px;
+    margin-right: 10px;
+}
+.juntos{
+    display: flex;
+    align-items: center;
+    margin-top: 16px;
+}
+@media (max-width:1045px){
+    body{
+        display: none;
+    }
+}
