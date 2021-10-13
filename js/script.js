@@ -3,14 +3,15 @@ document.getElementById("btn").addEventListener("click",function(){
     inp = document.getElementById("inp").value
     if (inp != ""){
         document.getElementById("janela").style.opacity="1"
-        document.getElementById("janela").style.zIndex="1"
+        document.getElementById("janela").style.zIndex="2"
         setTimeout(() => {
             document.getElementById("janela").style.opacity="0"
-            document.getElementById("janela").style.zIndex="-1"
+            document.getElementById("janela").style.zIndex="-2"
         }, 3000);
         setTimeout(() => {
             var btnb = document.getElementById("btnb")
             btnb.innerHTML ="fazer download"
+            btnb.setAttribute("target","_blank")
             document.getElementById("bem").innerHTML="Link Gerado Com Sucesso"
             var re= inp.replace("watch?v=","embed/")
             var re2= inp.replace("youtube","yout")
